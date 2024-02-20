@@ -4,6 +4,8 @@ import BooksPage from "../../components/pages/user/BooksPage"
 import BucketPage from "../../components/pages/user/BucketPage"
 import RegistrationPage from "../../components/pages/anonymous/RegistrationPage"
 import AdminReadBooksPage from "../../components/pages/admin/ReadBooks"
+import AdminDeleteBooksPage from "../../components/pages/admin/DeleteBooks"
+import AdminCreateBooksPage from "../../components/pages/admin/CreateBooks"
 
 
 const UseRouter = () => {
@@ -13,6 +15,8 @@ const UseRouter = () => {
         {path:"/books", element:<BooksPage />},
         {path:"/bucket", element:<BucketPage />},
         {path:"/admin/list-books", element:<AdminReadBooksPage />},
+        {path:"/admin/create/list-books", element:<AdminCreateBooksPage />},
+        {path:"/admin/delete/list-books", element:<AdminDeleteBooksPage />},
     ])
 
     return router
